@@ -2,7 +2,7 @@
 
 # CMPS 2200 Assignment 1
 
-**Name:**_________________________
+**Name:**_____Maria Chen____________________
 
 
 In this assignment, you will learn more about asymptotic notation, parallelism, functional languages, and algorithmic cost models. As in the recitation, some of your answer will go here and some will go in `main.py`. You are welcome to edit this `assignment-01.md` file directly, or print and fill in by hand. If you do the latter, please scan to a file `assignment-01.pdf` and push to your github repository. 
@@ -13,34 +13,27 @@ In this assignment, you will learn more about asymptotic notation, parallelism, 
 
   - 1a. Is $2^{n+1} \in O(2^n)$? Why or why not? 
 .  
-.  
+  Yes.
+. By apply L'Hopital's Rule, the limit for this is 2. O include the Theta. So it is right.
 .  
 .  
 . 
   - 1b. Is $2^{2^n} \in O(2^n)$? Why or why not?     
-.  
-.  
-.  
+.  No. By apply L'Hopital's Rule, we can get limit for this is infinite. Omega didn't include O, so it is wrong.
 .  
 .  
   - 1c. Is $n^{1.01} \in O(\mathrm{log}^2 n)$?    
-.  
-.  
-.  
-.  
+  No.
+
 
   - 1d. Is $n^{1.01} \in \Omega(\mathrm{log}^2 n)$?  
-.  
-.  
-.  
-.  
-  - 1e. Is $\sqrt{n} \in O((\mathrm{log} n)^3)$?  
-.  
-.  
-.  
-.  
+.  Yes.
+
+  - 1e. Is $\sqrt{n} \in O((\mathrm{log} n)^3)$? 
+ No.
+
   - 1f. Is $\sqrt{n} \in \Omega((\mathrm{log} n)^3)$?  
-.  
+.  Yes
 
 
 2. **SPARC to Python** (12 pts)
@@ -61,7 +54,7 @@ $$
   - 2a. (6 pts) Translate this to Python code -- fill in the `def foo` method in `main.py`  
 
   - 2b. (6 pts) What does this function do, in your own words?  
-
+This function is mainly recursive. Assuming x is less than or equal to 1, return the value of x. Assuming x is greater than 1 then bring (x-1) back into foo() and (x-2) into foo(). This funtion will recurse until x is less than or equal to 1. 
 .  
 .  
 .  
